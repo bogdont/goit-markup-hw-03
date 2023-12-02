@@ -34,6 +34,7 @@ img{
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .header-container {
     border-bottom: 1px solid #E7E9FC;
     display: flex;
@@ -107,9 +108,17 @@ img{
 }
 
 .title {
-    background-color: #2e2f42;
-    padding: 188px 0
-}
+    background-color: var(--NAVY-BLUE, #2E2F42);
+    padding: 188px 0;
+    background-image: linear-gradient
+                ( rgba(46, 47, 66, 0.70),
+                rgba(46, 47, 66, 0.70)) 
+                url(../images/people-in-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 100%;    
+}   
+
 
 .title-text {
     color:  #ffffff;
@@ -163,9 +172,46 @@ background: #404BBF;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .features-list {
     display: flex;
     gap: 24px;
+}
+.features-logo{
+    display: block;
+    margin: 24px 100px;
+}
+.features-list-logo-1 {
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+}
+.features-list-logo-2{
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+}
+.features-list-logo-3 {
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+}
+.features-list-logo-4 {
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
 }
 .features-list-item {
    width: calc((100% - 72px) / 4);
@@ -202,6 +248,14 @@ background: #404BBF;
 }
 .team-list {
     display: flex;
+    gap: 24px;
+}
+.team-social-links{
+    width: 232px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 .team-list-item {
